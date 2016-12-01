@@ -153,7 +153,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
-body{}
+body{
+    padding-bottom: 0px;
+}
 
  .ci-header{
         background-color: #ebe6e2; 
@@ -170,6 +172,10 @@ body{}
 			-ms-flex-pack: justify;
 			-webkit-justify-content: space-between;
 			justify-content: space-between;
+                        
+                        -webkit-flex-wrap: wrap;
+                         flex-wrap: wrap;
+                        
 			.ci-header-content{
 				padding: 10px 0;
 				.search-form-container{
@@ -689,8 +695,8 @@ body{}
             font-family: 'latoblack';
             padding: 17px;
             z-index: 222;
-            line-height: 0;
-            margin-top: -50px;
+            line-height: 0;  
+            margin-top: -10px; 
         }
     }
 }
@@ -1220,10 +1226,6 @@ footer{
 }
 .uk-modal-dialog{background: #fff;}
 /* Large desktops and laptops */
-@media (min-width: 1200px) {
-
-}
-
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 
@@ -1235,12 +1237,44 @@ footer{
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-color:red;
-background:red;
+@media (min-width: 220px) and  (max-width: 767px) {
+    
+    .posheader{
+            background-color: #ebe6e2; 
+            
+    	.header{
+            
+	    	position:relative;
+	    	z-index: 1;
+                nav.navbar{
+                    float: none;
+                }
+                a.navbar-brand{float: none;}
+	    }
+    	position:relative;
+    }
+    .navbar-toggle {
+            background-color: #3c1c02;  
+            margin-top: 0px;
+            .icon-bar{
+               background: #ebe6e2; 
+            }
+    }
+    #myCarousel {
+        height: auto;
+    }
+    .ci-intro-bar p{
+        line-height: 1.5;
+    }
+    .monprojet .figureprojet .descriptionpro .protitre{font-size: 40px;}
+    .monprojet .figureprojet .neuf .lstimg{height: auto;}
+    .monprojet .figureprojet .neuf .borderneuf{height: 140px;}
+    .presentation h3,.nosbien h3.titleagence{width: 100%;} 
+    #content .primary article.type-projet .entry-header h3{width: 100%;} 
+    #content h3{width: 100%;} 
+    #content .agence .soupresent{padding-bottom: 80px;}
+    
+    
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 480px) { 
-
-} 

@@ -75,7 +75,7 @@
 
 					      </button>
 
-					      <a class="navbar-brand" href="<?php bloginfo("url");?>" ><img class="img-responsive center-block" src="<?php bloginfo("stylesheet_directory");?>/images/Logo.png" alt=""></a>
+					      <a class="navbar-brand "  href="<?php bloginfo("url");?>" ><img class="img-responsive center-block" src="<?php bloginfo("stylesheet_directory");?>/images/Logo.png" alt=""></a>
 
 					    </div>
 
@@ -153,19 +153,19 @@
 
             </div>
 
-            <a class=" slidparalaxleft" href="#myCarousel" role="button" data-slide="prev">
+            <a class=" slidparalaxleft hidden-xs" href="#myCarousel" role="button" data-slide="prev">
 
               <span class="" href=""></span>
 
             </a>
 
-            <a class=" slidparalaxright" href="#myCarousel" role="button" data-slide="next">
+            <a class=" slidparalaxright hidden-xs" href="#myCarousel" role="button" data-slide="next">
 
               <span class="bx-next" href=""></span>
 
             </a>
 
-            <div class="ci-text-hello">
+            <div class="ci-text-hello hidden-xs">
                <p>entrez <span class="slidtext"> chez vous</span></p>
             </div>
 
@@ -337,7 +337,7 @@
 
 			</div>
 
-			<?php   $i++ ; endwhile; ?>
+			<?php   $i++ ; endwhile; ?> 
 
 			<a href="http://streamerzweb.com/contact-immo/gallery/" class="voirplus">VOIR TOUS</a>
 
