@@ -1,0 +1,391 @@
+/*
+Theme Name: POULINA
+Theme URI: http://wordpress.org/themes/twentyfourteen
+Author: the ghaoui hamdi
+Author URI: ghaoui.hamdi@gmail.com
+Description: Groupe holding poulina
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "compass";
+@import "partials/variables";
+body{
+	padding-top: 35px;
+	background-color : $gris;
+}
+h2{
+	color: $marron;
+	font-family: $proximaBold;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 1px solid $marron;
+	padding-bottom: 10px;
+	margin-top: 35px;
+	&.h2-blue{
+		color: $blue;
+	}
+}
+h3{
+	color: $white;
+	font-size: 25px;
+	font-family: $proximaBold;
+}
+header{	
+	position: relative;
+	.logo{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 2;
+		max-width: 387px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.top-header{
+		padding-bottom: 15px;
+		position: relative;
+		z-index: 3;
+		.social{
+			list-style: none;
+			padding-left: 0;
+
+			>li{
+				margin-left: 10px;
+				margin-right: 10px;
+
+				a{
+					transition: all .7s;
+					color: $marron;
+					&:hover{
+						color: $red;
+					}
+				}
+			}
+		}
+		.search-lang{
+			list-style: none;
+			justify-content: space-between;
+			display: inline-block;
+			color: $marron;
+			padding-left: 0;
+			>li{
+				padding-left: 8px;
+				padding-right: 8px;
+				border-right: 1px solid $blue-dark;
+				float: left;
+				&:last-child{
+					border: none;
+				}
+				&.date{
+					font-size: 12px;
+				}
+				&.langue{
+					cursor: pointer;
+					position: relative;
+					>span[class*='qtranxs_flag_']{
+
+						padding-left: 25px;
+						background-position: center left;
+						position: relative;
+					}
+					&:hover{
+						.language-chooser{
+							display: block;
+						}
+					}
+					.language-chooser{
+						display: none;
+						position: absolute;
+						width : 100%;
+						list-style: none;
+						padding-left: 0;
+						padding-top: 10px;
+						padding-bottom: 5px;
+						padding-left: 5px;
+						background-color: $gris;
+						left: 0;
+						li{
+							a{
+								padding-left: 25px;
+								color: $marron;
+								text-decoration: none;
+								&:hover{
+									color: $red;
+								}
+							}
+						}
+					}
+				}
+			}
+				
+		}
+	}
+	.bottom-header{
+		background-color: $blue;
+		position: relative;
+		z-index: 1;
+		padding-top: 35px;
+		padding-bottom: 35px;
+		ul{
+			&.menu{
+				display: flex;
+				justify-content: space-between;
+				list-style: none;
+				padding-left: 0;
+				margin-bottom: 0;
+				>li{
+					>a{
+						color: $white;
+						text-decoration: none;
+						transition: all .7s;
+						&:hover{
+							color: $red;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.actualite-home{
+	.uk-slider{
+		li{
+			.slider-item{
+				max-width: 300px;
+				margin-right: auto;
+				margin-left: auto;
+				.slider-item-image{
+					display: inline-block;
+					position: relative;
+					h3{
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						text-align: center;
+					}
+					.date{
+						position: absolute;
+						top: 0;
+						left: 0;
+						.jour{
+							background-color: $blue;
+							color: $white;
+							font-size: 30px;
+							text-align: center;
+							margin-bottom: 5px;
+							padding: 15px 10px;
+						}
+						.mois{
+							background-color: $blue;
+							color: $white;
+							font-size: 12px;
+							text-align: center;
+							padding: 5px 10px;
+						}
+					}
+					.permalien{
+						position: absolute;
+						top: 0;
+						right: 0;
+						background-color: $blue;
+						width: 20px;
+						height: 20px;
+						text-align: center;
+						color: $white;
+						line-height: 20px;
+						&:before{
+						    content: "\f067";
+						    position: absolute;
+						    left: 0;
+						    right: 0;
+						}
+					}
+				}
+				.slider-item-excerpt{
+					color: $black;
+					font-size: 13px;
+					font-style: justify;
+				}					
+			}
+		}
+	}
+	.slidenav-flex{
+		display: flex;
+		justify-content: flex-end;
+		.uk-slidenav{
+			width: 25px;
+			height: 25px;
+			text-align: center;
+			line-height: 25px;
+			border: 1px solid $marron;
+			background-color : $marron;
+			color: $white;
+			transition: all .7s;
+
+			&:hover{
+				background-color: $white;
+				color: $marron;
+			}
+		}
+	}
+}
+footer{
+	background-color: $white;
+	.social{
+		list-style: none;
+		padding-left: 0;
+		margin-top: 40px;
+		>li{
+			margin-left: 10px;
+			margin-right: 10px;
+
+			a{
+				transition: all .7s;
+				color: $marron;
+				&:hover{
+					color: $red;
+				}
+			}
+		}
+	}
+	.contact{
+		a{
+			color: $marron;
+			font-size: 16px;
+		}
+		p{
+			color: $textcolor;
+			span{
+				font-weight: bold;
+			}
+		}
+		.newsletter-input{
+			display: flex;
+			justify-content: center;
+			input{
+				&[type="email"]{
+					background-color: $gris;
+					border: none;
+				}
+				&[type="submit"]{
+					background-color: $marron;
+					width: 28px;
+					height: 28px;
+					background-image: url(images/fleche-newsletter.png);
+					background-position: center;
+					background-repeat: no-repeat;
+					border: none;
+				}
+			}
+		}
+	}
+	#menu-bottom-menu{
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		padding-left: 0;
+		li{
+			a{
+				color: $menubottom;
+				text-decoration: none;
+				transition: all .7s;
+				font-size: 18px;
+				&:hover{
+					color: $red;
+				}
+			}
+		}
+	}
+	.copyright{
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		li{
+			padding: 0 15px;
+			border-right: 1px solid $textcolor;
+			font-size: 13px;
+			color: $textcolor;
+		}
+	}
+}
+.slider{
+	.uk-slidenav-position{
+		position: relative;
+		.miniature{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			padding-left: 0;
+			margin : 0;
+			li{
+				width: 50%;
+				a{
+					max-width: 150px;
+					width: 100%;
+					display: block;
+					border: 2px solid $marron;
+					opacity: .5;
+					transition: all .5s;
+					&:hover{
+						opacity: 1;
+					}
+				}
+				&:nth-child(even){
+					a{
+						float: right;
+					}
+				}
+				&.uk-active{
+					a{
+						border-color: $red;
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.arrow-navigation{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			display: flex;
+			a{
+				width: 35px;
+				height: 35px;
+				background-color: $marron;
+				color: $white;
+				transition: all .7s;
+				text-align: center;
+				font-size: 36px;
+				font-weight: 100;
+				&:hover{
+					opacity: .5;
+				}
+			}
+		}
+	}
+}
+.comunique-home{
+	margin-bottom: 45px;
+	.input-search{
+		display: flex;
+		justify-content: center;
+		>*{
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
+}
