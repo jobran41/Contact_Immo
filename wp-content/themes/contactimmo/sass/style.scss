@@ -481,6 +481,7 @@ body{}
                             color: #3c1c02;
                             text-align: center;
                             font-weight: bold;
+                            margin-left: 15px;
                 }
             }
         }
@@ -491,16 +492,20 @@ body{}
                         position: relative;
                         width: 90%;
                         left: 30px;
+                    a{
+                            &.btnsavoir{
+                                margin-left: 3px; 
+                            }
+                    }
                 }
             }
 
         }
-        .commercial{
+        .commercial{ 
             position:relative;
            .descriptionpro{
                 width: 100%;
-                left: -15px;
-                text-align: right;
+                left: 0px;
                 .protitre{
                     color: #fff;
                     span{
@@ -518,8 +523,7 @@ body{}
                     color: #fff;
                     &.btnsavoir{
                         position: absolute;
-                         bottom: -10px;
-                        left: 169px;
+                        left: -12px;
                         border: 1px solid #fff;
                     }
                 }
@@ -536,6 +540,8 @@ body{}
             padding: 5px;
             top: 60px;
             z-index: 4;
+            background: #584338;
+            opacity: 0.5;
                 .contentneuf{
                     background: #584338;
                     height: 200px;
@@ -1213,7 +1219,27 @@ footer{
         }  
 }
 .uk-modal-dialog{background: #fff;}
-.test{
-    color: red;
-    background: red;
-} 
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
