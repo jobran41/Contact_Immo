@@ -1251,3 +1251,8 @@ footer .footerbottom ul li {
 .uk-modal-dialog {
   background: #fff;
 }
+
+/* line 1216, sass/style.scss */
+.test {
+  color: red;
+}
