@@ -681,16 +681,16 @@ body{}
     }
     a{
         &.voirplus{
-            float: right;
             width: 150px;
             text-align: center;
             border: 1px solid #1a1c27;
-            margin-left: 130px;
+            margin-left: 45%; 
             color: #1a1c27;
             font-family: 'latoblack';
             padding: 17px;
             z-index: 222;
             line-height: 0;
+            margin-top: -50px;
         }
     }
 }
@@ -1237,6 +1237,7 @@ footer{
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 color:red;
+background:red;
 }
 
 /* Portrait phones and smaller */
