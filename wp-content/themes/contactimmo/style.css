@@ -1261,4 +1261,7 @@ footer .footerbottom ul li {
 /* Landscape tablets and medium desktops */
 /* Portrait tablets and small desktops */
 /* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  color: red;
+}
 /* Portrait phones and smaller */

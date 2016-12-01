@@ -1188,7 +1188,7 @@ footer{
                                 justify-content: space-around;
                                li{
                                 color: #585553;
-                                font-family: 'latobold';
+                                font-family: 'latobold'; 
                                }
                             }
                             h4{
@@ -1236,10 +1236,10 @@ footer{
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-
+color:red;
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 480px) {
+@media (max-width: 480px) { 
 
-}
+} 
