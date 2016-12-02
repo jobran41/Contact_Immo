@@ -1171,26 +1171,21 @@ footer .footerbottom ul li {
   color: #23241a;
   margin-top: 10px;
 }
-/* line 1140, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog {
-  background: #fff;
-  color: red;
-}
-/* line 1143, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .slidehowpop {
+/* line 1141, sass/style.scss */
+#content .primary article.type-projet .slidehowpop {
   position: relative;
 }
-/* line 1147, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .slidehowpop ul li img {
+/* line 1145, sass/style.scss */
+#content .primary article.type-projet .slidehowpop ul li img {
   border: 1px solid #3b1c02;
   padding: 5px;
 }
-/* line 1152, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .slidehowpop ul.thamnail {
+/* line 1150, sass/style.scss */
+#content .primary article.type-projet .slidehowpop ul.thamnail {
   margin-top: 20px;
 }
-/* line 1157, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .slidehowpop a.btnslid {
+/* line 1155, sass/style.scss */
+#content .primary article.type-projet .slidehowpop a.btnslid {
   position: absolute;
   top: calc(100% - 70px);
   color: #23241a;
@@ -1198,23 +1193,23 @@ footer .footerbottom ul li {
   font-size: 30px;
   text-decoration: none;
 }
-/* line 1165, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .slidehowpop a.leftsl {
+/* line 1163, sass/style.scss */
+#content .primary article.type-projet .slidehowpop a.leftsl {
   left: -17px;
 }
-/* line 1168, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .slidehowpop a.rightsl {
+/* line 1166, sass/style.scss */
+#content .primary article.type-projet .slidehowpop a.rightsl {
   right: -17px;
 }
-/* line 1174, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .poptextstyle h2 {
+/* line 1172, sass/style.scss */
+#content .primary article.type-projet .poptextstyle h2 {
   color: #23241a;
   font-family: 'latoblack';
   text-align: center;
   font-size: 30px;
 }
-/* line 1180, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .poptextstyle ul {
+/* line 1178, sass/style.scss */
+#content .primary article.type-projet .poptextstyle ul {
   padding: 8px;
   list-style: none;
   border-top: 2px solid #23241a;
@@ -1230,25 +1225,25 @@ footer .footerbottom ul li {
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
-/* line 1195, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .poptextstyle ul li {
+/* line 1193, sass/style.scss */
+#content .primary article.type-projet .poptextstyle ul li {
   color: #585553;
   font-family: 'latobold';
 }
-/* line 1200, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .poptextstyle h4 {
+/* line 1198, sass/style.scss */
+#content .primary article.type-projet .poptextstyle h4 {
   color: #895f3b;
   font-family: 'latoblack';
   font-size: 22px;
 }
-/* line 1205, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .poptextstyle p {
+/* line 1203, sass/style.scss */
+#content .primary article.type-projet .poptextstyle p {
   color: #585553;
   font-family: 'latoregular';
   font-size: 17px;
 }
-/* line 1210, sass/style.scss */
-#content .primary article.type-projet .uk-modal-dialog .poptextstyle a {
+/* line 1208, sass/style.scss */
+#content .primary article.type-projet .poptextstyle a {
   width: 200px;
   border: 1px solid #000;
   margin: 0 auto;
@@ -1259,7 +1254,7 @@ footer .footerbottom ul li {
   text-align: center;
 }
 
-/* line 1227, sass/style.scss */
+/* line 1225, sass/style.scss */
 .uk-modal-dialog {
   background: #fff;
 }
@@ -1269,76 +1264,76 @@ footer .footerbottom ul li {
 /* Portrait tablets and small desktops */
 /* Landscape phones and portrait tablets */
 @media (min-width: 220px) and (max-width: 767px) {
-  /* line 1242, sass/style.scss */
+  /* line 1240, sass/style.scss */
   .posheader {
     background-color: #ebe6e2;
     position: relative;
   }
-  /* line 1245, sass/style.scss */
+  /* line 1243, sass/style.scss */
   .posheader .header {
     position: relative;
     z-index: 1;
   }
-  /* line 1249, sass/style.scss */
+  /* line 1247, sass/style.scss */
   .posheader .header nav.navbar {
     float: none;
   }
-  /* line 1252, sass/style.scss */
+  /* line 1250, sass/style.scss */
   .posheader .header a.navbar-brand {
     float: none;
   }
 
-  /* line 1256, sass/style.scss */
+  /* line 1254, sass/style.scss */
   .navbar-toggle {
     background-color: #3c1c02;
     margin-top: 0px;
   }
-  /* line 1259, sass/style.scss */
+  /* line 1257, sass/style.scss */
   .navbar-toggle .icon-bar {
     background: #ebe6e2;
   }
 
-  /* line 1263, sass/style.scss */
+  /* line 1261, sass/style.scss */
   #myCarousel {
     height: auto;
   }
 
-  /* line 1266, sass/style.scss */
+  /* line 1264, sass/style.scss */
   .ci-intro-bar p {
     line-height: 1.5;
   }
 
-  /* line 1269, sass/style.scss */
+  /* line 1267, sass/style.scss */
   .monprojet .figureprojet .descriptionpro .protitre {
     font-size: 40px;
   }
 
-  /* line 1270, sass/style.scss */
+  /* line 1268, sass/style.scss */
   .monprojet .figureprojet .neuf .lstimg {
     height: auto;
   }
 
-  /* line 1271, sass/style.scss */
+  /* line 1269, sass/style.scss */
   .monprojet .figureprojet .neuf .borderneuf {
     height: 140px;
   }
 
-  /* line 1272, sass/style.scss */
+  /* line 1270, sass/style.scss */
   .presentation h3, .nosbien h3.titleagence {
     width: 100%;
   }
 
-  /* line 1273, sass/style.scss */
+  /* line 1271, sass/style.scss */
   #content .primary article.type-projet .entry-header h3 {
     width: 100%;
   }
 
-  /* line 1274, sass/style.scss */
+  /* line 1272, sass/style.scss */
   #content h3 {
     width: 100%;
   }
 
-  /* line 1275, sass/style.scss */
+  /* line 1273, sass/style.scss */
   #content .agence .soupresent {
     padding-bottom: 80px;
   }

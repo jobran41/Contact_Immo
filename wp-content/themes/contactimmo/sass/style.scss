@@ -1137,9 +1137,7 @@ footer{
                             }
                         }
                     }
-                    .uk-modal-dialog {
-                        background:#fff;
-                        color: red;
+                    
                         .slidehowpop{
                             position:relative;
                             ul{
@@ -1218,13 +1216,13 @@ footer{
                             text-align: center;
                             }
                         }
-                    }
+                    
                 }
 
             }
         }  
 }
-.uk-modal-dialog{background: #fff;}
+.uk-modal-dialog{background: #fff;} 
 /* Large desktops and laptops */
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
