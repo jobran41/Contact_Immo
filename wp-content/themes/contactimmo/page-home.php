@@ -282,10 +282,19 @@
 		'post_type' => 'nosbien',
 
 		)) ;?>
-
+                
 		<div class="uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-3" data-uk-grid="{gutter: 20}">
 
 			<?php $i=0; while ($documents->have_posts()) : $documents->the_post(); ?>
+                    <?php
+                    $posts = get_field('link');
+                    //echo '<pre>';print_r($posts);echo '</pre>'; 
+                       
+                     /*foreach ($posts as $post){
+                         //echo $posts[0]->guid;
+                         echo the_permalink();
+                     }*/
+                    ?> 
 
 	         <div class="img<?php echo $i ; ?> jsgrid">
 
@@ -303,11 +312,13 @@
 
 	                	<figcaption class="uk-overlay-panel uk-overlay-icon uk-overlay-background uk-overlay-fade"></figcaption>
 
-	                    <a class="uk-position-cover" href="#"></a>
+	                    <a class="uk-position-cover linkhreff" data-link='linkhref' href="<?php foreach ($posts as $post){
+                                the_permalink(); 
+                            } ?>"></a>
 
 	                </figure>
 
-	                <a href="#" class="captionportfolio">
+                                    <a href="#" class="captionportfolio">
 
 						<h3 class="titleportfolio"><?php  the_title();?></h3>
 
@@ -342,6 +353,7 @@
 			<a href="http://streamerzweb.com/contact-immo/gallery/" class="voirplus">VOIR TOUS</a>
 
 		</div>	
+                
 
 
 

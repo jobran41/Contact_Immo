@@ -4,7 +4,16 @@
 
 $(document).ready(function() {
 
-	
+	 /*$('.jsgrid').delegate('.linkhreff','click',function(){
+            alert('jooooooo');
+        });*/
+    $('.linkhreff').mousedown(function(){
+        var hach='alocontcrsv';
+        var query = "nosb=";
+        var firstPart = $(this).attr('href')+"?";
+        //alert(firstPart+query+hach);
+        location.href= firstPart + query + hach;  
+    });
 
 
 	$('ul#menu-primary li').find('a').removeAttr('data-toggle');

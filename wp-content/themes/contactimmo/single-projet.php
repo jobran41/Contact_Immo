@@ -191,7 +191,7 @@ get_header(); ?>
 
 
 
-			<?php get_template_part( 'content', 'projet' ); ?>
+			<?php  get_template_part( 'content', 'projet' ); ?>
 
                 
 
